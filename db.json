@@ -1,0 +1,45 @@
+{
+  "electricians": [
+    {
+      "name": "peter murugi",
+      "location": "Nairobi",
+      "price": 50,
+      "image": "assets/images/paul.jpeg"
+    },
+    {
+      "name": "Jane njeri",
+      "location": "Mombasa",
+      "price": 40,
+      "image": "assets/images/stacy.jpeg"
+    }
+  ],
+  "painters": [
+    {
+      "name": "Peter Painter",
+      "location": "Kisumu",
+      "price": 45,
+      "image": "assets/images/peter.jpeg"
+    },
+    {
+      "name": "Lucy Artist",
+      "location": "Eldoret",
+      "price": 60,
+      "image": "assets/images/stacy.jpeg"
+    }
+  ],
+  "plumbers": [
+    {
+      "name": "Paul Plumber",
+      "location": "Nakuru",
+      "price": 70,
+      "image": "assets/images/paul.jpeg"
+      
+    },
+    {
+      "name": "Sam plumber",
+      "location": "Thika",
+      "price": 80,
+      "image": "assets/images/peter.jpeg"
+    }
+  ]
+}

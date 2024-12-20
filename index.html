@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafty - Find Skilled Workers</title>
+    <style>
+        /* CSS for styling the page */
+
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #4f504e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        /* Header additional elements */
+        header .search-bar, header .login-bar {
+            margin: 10px 0;
+        }
+
+        /* Banner image styling */
+        .header-image {
+            width: 100%;
+            height: auto;
+            
+        }
+
+        /* Category cards styling */
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .category-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+
+        /* Hover effect for categories */
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Worker section styling */
+        .workers {
+            display: none;
+            margin: 20px;
+        }
+
+        .worker-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Worker image styling */
+        .worker-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .worker-info {
+            flex: 1;
+        }
+
+        .worker-info h4 {
+            margin: 0;
+        }
+
+        /* Book button styling */
+        .book-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .book-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with login, search, and banner -->
+    <header>
+        <h1>Crafty</h1>
+        <p>On Demand Services</p>
+        <div class="login-bar">
+            <button>Log In</button>
+            <button>Register</button>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for workers...">
+        </div>
+    </header>
+
+    <img src="assets/images/pexels-york-peuckert-2147538587-29802716.jpg" alt="Crafty Banner" class="header-image">
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="category-card" onclick="displayWorkers('electricians')">
+            <img src="assets/images/peter.jpeg" alt="Electricians" width="100">
+            <h3>Electricians</h3>
+        </div>
+        <div class="category-card" onclick="displayWorkers('painters')">
+            <img src="assets/images/stacy.jpeg" alt="Painters" width="100">
+            <h3>Painters</h3>
+        </div>
+        <div class="category-card" onclick="displayWorkers('plumbers')">
+            <img src="assets/images/peter.jpeg" alt="Plumbers" width="100">
+            <h3>Plumbers</h3>
+        </div>
+    </section>
+
+    <!-- Workers Section -->
+    <section class="workers" id="workers">
+        <h2>Available Workers</h2>
+        <div id="worker-list"></div>
+    </section>
+
+    <!-- Linking the JavaScript file -->
+    <script src="crafty2.js"></script>
+</body>
+</html>
+
